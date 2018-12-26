@@ -19,6 +19,7 @@ public class Main {
         ifInteger(32);
         System.out.println(isPositiveOrNegative(-7));
         helloName("Вадим");
+        System.out.println(isMegaYear(2000));
 
     }
 
@@ -55,5 +56,10 @@ public class Main {
 
     public static void helloName(String s){
         System.out.println("Привет, " + s + "!");
+    }
+
+    public static boolean isMegaYear(int year){
+        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+
     }
 }
